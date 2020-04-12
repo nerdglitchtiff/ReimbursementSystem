@@ -8,10 +8,10 @@ public abstract class Staff {
 	private char status;
 	private String usrnm;
 	private String psswrd;
+	
 	public int getEmpdId() {
 		return empdId;
 	}
-
 
 
 	public Staff() {

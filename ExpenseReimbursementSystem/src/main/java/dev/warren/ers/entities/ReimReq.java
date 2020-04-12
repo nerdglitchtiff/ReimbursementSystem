@@ -12,8 +12,6 @@ public class ReimReq {
 	private Date appDate;
 
 
-
-
 	public ReimReq() {
 		super();
 	}
