@@ -12,7 +12,10 @@ public class ConnectionUtil {
 	public static Connection createConnection() {
 		try {
 			Properties props = new Properties();
+<<<<<<< HEAD
 			Class.forName("org.mariadb.jdbc.Driver");
+=======
+>>>>>>> 994bbc83711c1881e1a21b750edbce6082f4e972
 			FileInputStream in = new FileInputStream("src/main/resources/connection.properties"); 
 			props.load(in);
 			String details = props.getProperty("connexion");
@@ -30,9 +33,12 @@ public class ConnectionUtil {
 			e.printStackTrace();
 			return null;
 
+<<<<<<< HEAD
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 			return null;
+=======
+>>>>>>> 994bbc83711c1881e1a21b750edbce6082f4e972
 		}
 
 	}
