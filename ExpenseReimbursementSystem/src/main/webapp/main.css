@@ -1,0 +1,194 @@
+.hide{display: none;}
+.btnStyle{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    margin-right:2%;
+    font-family: 'Courgette', cursive;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: black;
+ 
+}
+
+
+.navBtns{
+    text-align: center;
+}
+
+.navBtns button:hover{
+    font-size: 1.8em;
+}
+
+a.shadow-multiple{
+    text-shadow: 2px 2px 3px yellow, 3px 3px 5px red;
+}
+
+li.shadow-multiple{
+    text-shadow: 2px 2px 3px yellow, 3px 3px 5px red;
+}
+
+
+.mainNav,.mainFoot{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type:none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+    margin-top: 3%;
+    
+}
+
+.mainNav::after {
+    content: "";
+    background-image: url('resources/banner.jpeg');
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.mainNav,.mainFoot a{
+    text-decoration: none;
+    font-size: 2 em;
+    font-weight: bolder;
+    color: black;
+ 
+    
+}
+
+
+.mainNav a:hover {
+    font-size: 1.2em;
+    color: black;
+  }
+
+#logDiv{
+    margin-left: 15%;
+    font-family: 'Courgette', cursive;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: rgb(90, 90, 87);
+    background: -webkit-linear-gradient(#c3f0f5,  #e6c6f4,#f6c4c4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#create,#process{
+    margin-left: 12%;
+    margin-top: 9%;
+    font-family: 'Courgette', cursive;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color:black;
+}
+
+#logBtn{
+    font-family: 'Courgette', cursive;
+    font-size: 1em;
+    font-weight: bolder;
+    color: rgb(49, 49, 47);
+    margin-left: 7%;
+    margin-top:3%;
+    background: -webkit-linear-gradient(#c3f0f5,  #e6c6f4,#f6c4c4);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+
+}
+
+#reqBtn,#remBtn,#procBtn,#updateBtn{
+    font-family: 'Courgette', cursive;
+    font-size: 1em;
+    font-weight: bolder;
+    color:black;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 224, 0);
+
+}
+#remBtn,#procBtn{
+    margin-left:15%;
+    font-size: 1.8em;
+}
+
+#usrnm,#psswrd{
+    background-color: rgb(49, 49, 47);
+    background: -webkit-linear-gradient(#c3f0f5,  #e6c6f4,#f6c4c4);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+#amt,#aAmt,#reqStatus,#proDate{
+    font-size: .7em;
+    background-color: rgba(255, 255, 224, 0);
+    font-family: 'Courgette', cursive;
+}
+
+#details{
+    font-size: .8em;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    background-color: rgba(255, 255, 224, 0);  
+}
+.mainFoot{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 70%;
+    
+
+}
+td,th{
+    font-family: 'Courgette', cursive;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: black;
+    padding-right: .2%;
+    text-align: center;
+
+}
+table{
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: rgba(255, 255, 224, 0); 
+    
+}
+
+p{
+    font-family: 'Courgette', cursive;
+    font-size: 1.2em;
+    font-weight: bolder;
+
+}
+
+#hd1{
+    margin-top: 5%;
+    font-family: 'Courgette', cursive;
+}
+
+/* .hd22{
+    display: flex;
+   justify-content: space-evenly;
+    
+} */
+
+/* .hompic{
+    height: 250px; width: 250px;
+   
+}
+.pics{
+    height: auto; width: 100%;
+} */
+
+#logInfo{
+    margin: 0px;
+    margin-bottom: 2%;
+    margin-left: 80%;
+}

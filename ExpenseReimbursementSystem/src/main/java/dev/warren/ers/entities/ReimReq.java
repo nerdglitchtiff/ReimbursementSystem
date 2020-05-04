@@ -1,6 +1,6 @@
 package dev.warren.ers.entities;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class ReimReq {
 	private int rId;
@@ -9,12 +9,34 @@ public class ReimReq {
 	private int empId;
 	private String status = "pending";
 	private int mgId;
+	private long millis=System.currentTimeMillis();  
+	private Date reqDate = new java.sql.Date(millis); 
 	private Date appDate;
+	private String details;
+	
 
 
 	public ReimReq() {
 		super();
 	}
+	
+	
+
+	public ReimReq(int rId, double amt, double amtApproved, int empId, String status, int mgId, Date reqDate,
+			Date appDate, String details) {
+		super();
+		this.rId = rId;
+		this.amt = amt;
+		this.amtApproved = amtApproved;
+		this.empId = empId;
+		this.status = status;
+		this.mgId = mgId;
+		this.reqDate = reqDate;
+		this.appDate = appDate;
+		this.details = details;
+	}
+
+
 
 	public int getrId() {
 		return rId;
@@ -72,15 +94,36 @@ public class ReimReq {
 		return appDate;
 	}
 
-	public void setAppDate(Date appDate) {
-		this.appDate = java.util.Calendar.getInstance().getTime();  
+	public void setAppDate() {
+		long millis=System.currentTimeMillis();  
+		 
+		this.appDate = new java.sql.Date(millis); 
+	}
+	
+	public void setAppDate( Date appDate) {
+	 
+		 
+		this.appDate = appDate;
 	}
 
-	@Override
-	public String toString() {
-		return " Request Id " + rId + ":  Amount Requested:" + amt + " Employee Id: " + empId + " Status: " + status + "Approving Manager: " + mgId
-				+ "Amount Reimbursed: " + amtApproved;
+	public Date getReqDate() {
+		return reqDate;
 	}
+
+	
+	public void setReqDate(Date reqDate) {
+		this.reqDate = reqDate;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
+
 
 
 
