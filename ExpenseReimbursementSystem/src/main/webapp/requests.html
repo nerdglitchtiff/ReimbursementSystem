@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Reimbursements</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('resources/kittyprincess.png'); background-repeat: no-repeat;background-size: 100%; background-position: top,center; font-family: 'Courgette', cursive;">
+    <h4 id="logInfo"></h4>
+    <nav>
+        <ul class="mainNav">
+            <li class="btnStyle"><a href="http://localhost:8080/ExpenseReimbursementSystem/"> Home</a> </li>
+            <li class="btnStyle"><a> Company</a> </li>
+            <li class="btnStyle"><a> Timesheets</a> </li>
+            <li class="btnStyle"> <a  href="requests.html">Reimbursements</a> </li><!--THIS IS THE LINK THAT REDIRECTS FROM INDEX HTML TO REQ HTML-->
+            <li class="btnStyle"><a> Handbook</a> </li>
+            <li class="btnStyle"><a> Help</a> </li>
+            <li class="btnStyle"><a href="http://localhost:8080/ExpenseReimbursementSystem/" onclick='signout()'> Sign Out</a> </li>
+        </ul>
+    </nav>
+    
+    <nav>
+        <div class="navBtns" id="topNav">
+            <button id="crtBtn" class="btnStyle">Create Request</button>
+            <button id="myBtn" class="btnStyle">My Requests</button>
+            <button id="statBtn" class="btnStyle">My Requests Approved</button>
+            <button id="dateBtn" class="btnStyle">My Requests Denied</button>
+            <!-- <button id="pBtn" class="btnStyle">My Requests Pending</button> -->
+            <button id="removeBtn" class="btnStyle">Remove Request</button>
+        </div>
+
+    </nav>
+    <nav>
+        <div class="navBtns" id="bottomNav">
+            <button id="allBtn" class="btnStyle">All Reimb. Requests</button>
+            <button id="allDateBtn" class="btnStyle">All Approved</button>
+            <button id="addIdBtn" class="btnStyle">All By Staffer I.D.</button>
+            <button id="allStat" class="btnStyle">All By Pending</button>
+            <button id="allNgridBtn" class="btnStyle">All My Staff</button>  
+            <button id="denyBtn" class="btnStyle">All Denied</button> 
+        </div>
+
+    </nav>
+
+  
+
+    <div id="create" class="hide">
+        <label>Amount: </label><input type="text" id="amt"/><br>
+        <label>Details: </label><textarea id="details"></textarea><br>
+        <button id="reqBtn">Submit Request</button>
+        <p id="crtReponse"></p>
+   </div>
+
+   <div id="req" class="hide">
+    <table id="myTab">
+        
+        <thead>
+            <th>Amount</th>
+            <th>Amount Approved</th>
+            <th>Employee Id</th>
+            <th>Status</th>
+            <th>Approving Manager</th>
+            <th>Request Date</th>
+            <th>Approval Date</th>
+            <th>Details </th>
+        </thead>
+    </table>
+     
+   </div>
+
+   <div id="req2" class="hide">
+    <table id="myTab2">
+        
+        <thead>
+            <th>Amount</th>
+            <th>Amount Approved</th>
+            <th>Employee Id</th>
+            <th>Status</th>
+            <th>Approving Manager</th>
+            <th>Request Date</th>
+            <th>Approval Date</th>
+            <th>Details </th>
+        </thead>
+    </table>
+     
+   </div>
+
+
+
+   <!--  METHODS THAT REQUIRE ELEMENT STUFF AVI SENT -->
+
+   <div id="stat" class="hide">
+    <table id="statTab">
+        <thead>
+            <th>Amount</th>
+            <th>Amount Approved</th>
+            <th>Employee Id</th>
+            <th>Status</th>
+            <th>Approving Manager</th>
+            <th>Request Date</th>
+            <th>Approval Date</th>
+            <th>Details </th>
+        </thead>
+    </table>
+
+        <button id="procBtn">Process</button>
+     
+   </div>
+
+   <div id="process" class="hide">
+    <label>Approved Amount: </label><input type="text" id="aAmt"/><br>
+    <label>Status: </label><input type="text" id="reqStatus"><br>
+    <button id="updateBtn">Submit</button>
+</div>
+    
+
+    <div id="remove" class="hide">
+        <table id="remTab">
+            <thead>
+                <th>Amount</th>
+                <th>Amount Approved</th>
+                <th>Employee Id</th>
+                <th>Status</th>
+                <th>Approving Manager</th>
+                <th>Request Date</th>
+                <th>Approval Date</th>
+                <th>Details </th>
+            </thead>
+        </table>
+
+        <button id="remBtn">Remove</button>
+   
+    </div>
+
+    <footer>
+        <ul class="mainFoot">
+            <li class="btnStyle"><a href="http://localhost:8080/ExpenseReimbursementSystem/"> Home</a> </li>
+            <li class="btnStyle"><a> Company</a> </li>
+            <li class="btnStyle"><a> Timesheets</a> </li>
+            <li class="btnStyle"> <a  href="requests.html">Reimbursements</a> </li><!--THIS IS THE LINK THAT REDIRECTS FROM INDEX HTML TO REQ HTML-->
+            <li class="btnStyle"><a> Handbook</a> </li>
+            <li class="btnStyle"><a> Help</a> </li>
+            <li class="btnStyle"><a> Sign Out</a> </li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

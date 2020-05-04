@@ -83,25 +83,24 @@ public abstract class Staff {
 
 
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((psswrd == null) ? 0 : psswrd.hashCode());
-		result = prime * result + ((usrnm == null) ? 0 : usrnm.hashCode());
-		return result;
-	}
+//	@Override
+//	public int hashCode() {
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + ((psswrd == null) ? 0 : psswrd.hashCode());
+//		result = prime * result + ((usrnm == null) ? 0 : usrnm.hashCode());
+//		return result;
+//	}
 
 
 
-	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Staff obj) {
 		boolean result = false;
-		if(obj instanceof Staff) {
-			if(this.usrnm.equals(((Staff)obj).getUsrnm()) && this.psswrd.equals(((Staff)obj).getPsswrd())){
+		
+			if( this.usrnm.equals(obj.getUsrnm()) && this.psswrd.equals(obj.getPsswrd()) ){
 				result = true;
 			}
-		}
+		
 		return result;
 
 	}

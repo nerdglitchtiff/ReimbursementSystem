@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -11,14 +10,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>ExpenseReimbursementSystems Maven Webapp</name>
+	<name>ExpenseReimbursementSystem Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -36,22 +35,10 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-=======
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>dev.warren</groupId>
-	<artifactId>ExpenseReimbursementSystem</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<dependencies>
-		<dependency>
->>>>>>> 994bbc83711c1881e1a21b750edbce6082f4e972
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<version>2.6.0</version>
 		</dependency>
-<<<<<<< HEAD
 
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
@@ -75,7 +62,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>ExpenseReimbursementSystems</finalName>
+		<finalName>ExpenseReimbursementSystem</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
@@ -112,10 +99,3 @@
 		</pluginManagement>
 	</build>
 </project>
-=======
-		
-		
-		
-	</dependencies>
-</project>
->>>>>>> 994bbc83711c1881e1a21b750edbce6082f4e972
